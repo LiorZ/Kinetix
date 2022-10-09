@@ -8,14 +8,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def run(exp,args):
-    result = exp.run(args.steps,dt=args.dt)
+    result = exp.run(args.steps,dt=args.delta_t)
 
     df = pd.DataFrame(result)
     if args.plot_out is not None:
         ax = sns.lineplot(data=df.melt(id_vars='step'),y='value',x='step',hue='variable')
-        plt.savefig('output.png')
-    if args.plot_out is not None:
-        df.to_csv(args.plot_out,index=False)
+        plt.savefig(args.plot_out)
+    if args.csv_out is not None:
+        df.to_csv(args.csv_out,index=False)
 
 
 
@@ -28,12 +28,9 @@ if __name__ == '__main__':
     argparser.add_argument('--delta_t',help='size of each step (seconds)', type=float, default=0.01)
     args = argparser.parse_args()
 
-    dt = args.delta_t
-    steps = args.steps
-
-
     # Read the yaml file:
     yaml_parser = parser.KinetixParser(args.input)
     
     experiment = yaml_parser.parse_experiment()
+    run(experiment,args)
     
