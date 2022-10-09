@@ -1,0 +1,15 @@
+---
+name: "Glucose kinase simulation"
+reactants:
+  glucose: 0.2
+  glucose_6_p: 0.0
+enzymes:
+  gluk: 0.05
+reaction:
+  gluk:
+    fwd: "glucose"
+    back: "glucose_6_p"
+    km_fwd: 0.24
+    km_back: 21
+    kcat_fwd: 61
+    kcat_back: 15.9
