@@ -1,5 +1,4 @@
 import networkx as nx
-import seaborn as sns
 import itertools as it
 class ReactionParameters:
   def __init__(self,substrate,product,km_fwd,km_back,kcat_fwd,kcat_back):
