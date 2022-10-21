@@ -34,7 +34,10 @@ Then, run the simulation with a simple command line and a few arguments:
 ```
 python ./code/runner.py examples/glucose_kinase.yaml --plot_out gluc.png --csv_out gluc.csv
 ```
-A figure showing the progression of the reaction as a function of time is displayed:
+A figure showing the progression of the reaction as a function of time is generated:
 <p align="center">
   <img src="examples/figures/gluc.svg" />
 </p>
+
+A csv file containing the data used to generate the figure can also optionally be generated and saved (using the `--csv_out` flag)
+
