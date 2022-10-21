@@ -1,0 +1,38 @@
+---
+name: "Allulose synthesis from fructose"
+reactants:
+  fructose: 1.8
+  fructose_6_p: 0.0
+  allulose: 0.0
+  allulose_6_p: 0.0
+enzymes:
+  fruk: 0.05
+  alsE: 0.05
+  phosphatase: 0.05
+reaction:
+  fruk:
+    fwd: "fructose_6_p"
+    back: "fructose"
+    km_fwd: 0.24
+    km_back: 21
+    kcat_fwd: 61
+    kcat_back: 15.9
+  alsE:
+    fwd: "allulose_6_p"
+    back: "fructose_6_p"
+    km_fwd: 1.6 
+    km_back: 1.6 
+    kcat_fwd: 46
+    kcat_back: 46
+  phosphatase:
+    fwd: "allulose"
+    back: "allulose_6_p"
+    km_fwd: 1 
+    km_back: 100
+    kcat_fwd: 100
+    kcat_back: 1
+
+
+
+
+

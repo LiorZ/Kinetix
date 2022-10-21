@@ -19,7 +19,7 @@ class KinetixParser:
             if ename not in self.data['reaction'].keys():
                 break
             params = self.data['reaction'][ename]
-            reaction_param = ReactionParameters(self.reactants[params['fwd']],self.reactants[params['back']],params['km_fwd'],params['km_back'],params['kcat_fwd'],params['kcat_back'])
+            reaction_param = ReactionParameters(self.reactants[params['back']],self.reactants[params['fwd']],params['km_fwd'],params['km_back'],params['kcat_fwd'],params['kcat_back'])
             self.enzymes[ename].add_reaction_params(reaction_param)
         self.experiment = Experiment()
         for e in self.enzymes.values():
