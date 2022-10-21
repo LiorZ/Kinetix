@@ -7,7 +7,7 @@ It allows one to plot reaction kinetics that follows the reversible [Michaelis -
 One can use the library to produce figures via a command line interface or programmatically (see below for examples)
 
 ### CLI
-As an example, the reaction kinetics of Glucose Kinase (EC: [2.7.1.2])(https://www.brenda-enzymes.org/enzyme.php?ecno=2.7.1.2) is displayed as an example.
+As an example, the reaction kinetics of Glucose Kinase (EC: [2.7.1.2](https://www.brenda-enzymes.org/enzyme.php?ecno=2.7.1.2) is displayed as an example)
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Glucokinase.png" />
 </p>
