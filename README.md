@@ -8,5 +8,4 @@ One can use the library to produce figures via a command line interface or progr
 
 ### CLI
 
-![Alt text](examples/figures/gluc.svg)
 <img src="examples/figures/gluc.svg">

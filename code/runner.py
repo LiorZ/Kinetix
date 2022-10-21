@@ -13,6 +13,8 @@ def run(exp,args):
     df = pd.DataFrame(result)
     if args.plot_out is not None:
         ax = sns.lineplot(data=df.melt(id_vars='step'),y='value',x='step',hue='variable')
+        ax.set_xlabel('Time (100 ms increments)')
+        ax.set_ylabel('Concentration (mM)')
         plt.savefig(args.plot_out)
     if args.csv_out is not None:
         df.to_csv(args.csv_out,index=False)
