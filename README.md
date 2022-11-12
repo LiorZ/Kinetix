@@ -103,5 +103,4 @@ To produce the reaction figure, which displays the concentration of each of the 
 Kinetix also makes it really easy to simulate and plot a reaction more flexibly via a simple API.
 Example:
 
-
-
+https://github.com/LiorZ/Kinetix/blob/4d1107d3e85c45d8d3f222428936ef82c658f223/examples/programmatic.py#L8-L44
