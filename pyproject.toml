@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kinetix"
+version = "0.1.0"
+authors = [
+    { name="Lior Zimmerman", email="zimmerman.lior@gmail.com" },
+]
+description = "A simple lightweight library for simulating and plotting enzyme kinetics"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = ["kinetics", "enzyme", "simulation", "plotting","biochemistry"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Homepage" = "http://github.com/LiorZ/Kinetix"
+Bug Tracker = "http://github.com/LiorZ/Kinetix/issues"
+
