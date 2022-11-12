@@ -20,5 +20,5 @@ classifiers = [
 ]
 [project.urls]
 "Homepage" = "http://github.com/LiorZ/Kinetix"
-Bug Tracker = "http://github.com/LiorZ/Kinetix/issues"
+"Bug Tracker" = "http://github.com/LiorZ/Kinetix/issues"
 
