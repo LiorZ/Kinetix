@@ -20,8 +20,7 @@ def run(exp,args):
         df.to_csv(args.csv_out,index=False)
 
 
-
-if __name__ == '__main__':
+def main():
     argparser = argparse.ArgumentParser()
     argparser.add_argument('input', help='input yaml file with reaction definitions')
     argparser.add_argument('--csv_out', help='output csv file with reaction steps',default=None)
@@ -36,3 +35,5 @@ if __name__ == '__main__':
     experiment = yaml_parser.parse_experiment()
     run(experiment,args)
     
+if __name__ == '__main__':
+    main()
