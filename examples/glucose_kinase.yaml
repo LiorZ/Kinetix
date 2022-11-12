@@ -7,8 +7,8 @@ enzymes:
   gluk: 0.05
 reaction:
   gluk:
-    fwd: "glucose"
-    back: "glucose_6_p"
+    fwd: "glucose_6_p"
+    back: "glucose"
     km_fwd: 0.24
     km_back: 21
     kcat_fwd: 61
