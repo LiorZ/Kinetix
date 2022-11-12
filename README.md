@@ -21,11 +21,11 @@ reactants: #Concentration of the reactants at the beginning of the reaction (mM)
   glucose: 0.2
   glucose_6_p: 0.0
 enzymes: #Concentration of the enzyme(s) at the begining of the reaction (mM)
-  gluk: 0.05 
+  gluk: 0.05
 reaction: #Kinetic parameters of each of the enzymes for the forward and backward steps of the (reversible) reaction. Note that non-reversible reactions can simple be modeled with high Km for on of the directions.
-  gluk: 
-    fwd: "glucose"
-    back: "glucose_6_p"
+  gluk:
+    fwd: "glucose_6_p"
+    back: "glucose"
     km_fwd: 0.24
     km_back: 21
     kcat_fwd: 61
