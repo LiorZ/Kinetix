@@ -3,6 +3,11 @@
 This is a simple framework for single / multiple reaction enzyme kinetics simulation and plotting.
 It allows one to plot reaction kinetics that follows the reversible [Michaelis - Menten](https://en.wikipedia.org/wiki/Michaelis%E2%80%93Menten_kinetics) model.
 
+## Installation
+```
+pip install kinetix
+```
+
 ## Usage
 One can use the library to produce figures via a command line interface or programmatically (see below for examples)
 
@@ -34,7 +39,7 @@ reaction: #Kinetic parameters of each of the enzymes for the forward and backwar
 
 Then, run the simulation with a simple command line and a few arguments:
 ```
-python ./code/runner.py examples/glucose_kinase.yaml --plot_out gluc.png --csv_out gluc.csv
+kinetix glucose_kinase.yaml --plot_out gluc.png --csv_out gluc.csv
 ```
 A figure showing the progression of the reaction as a function of time is generated:
 <p align="center">
@@ -91,7 +96,7 @@ reaction:
 
 Then, invoke the application just as before:
 ```
-./code/runner.py examples/allulose.yaml --plot_out examples/figures/alu.svg --csv_out examples/csvs/alu.csv
+kinetix allulose.yaml --plot_out examples/figures/alu.svg --csv_out examples/csvs/alu.csv
 ```
 
 To produce the reaction figure, which displays the concentration of each of the reactants as a function of time:
