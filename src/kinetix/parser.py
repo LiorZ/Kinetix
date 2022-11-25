@@ -1,7 +1,7 @@
 import yaml
 from .base import *
 class KinetixParser:
-    def __init__(self, filename):
+    def __init__(self, filename: str):
         self.filename = filename
         self.data = None
         self.experiment = None
